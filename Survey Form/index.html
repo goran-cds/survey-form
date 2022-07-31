@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabere studentesti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+
+        <h1 id="title">Aplica pentru o tabara de vara</h1>
+        <p id="description">Organizam tabere studentesti cu o durata de 5 zile la munte si la mare pentru studentii de la AC.</p>
+
+        <form id="survey-form">
+          
+          <fieldset>
+              
+            <label id="name-label"> Nume si prenume <input id="name" type="text"  placeholder="Numele complet" required> </label>
+            <label id="email-label"> Email <input id="email" type="email" placeholder="Email student" required> </label>
+            <label id="number-label"> Varsta <input id="number" type="number" min="18" max="35" placeholder="Intre 18-35 de ani" required> </label>
+
+          </fieldset>
+  
+          <fieldset>
+
+            <label><input type="radio" name="profil" value="is" class="inline"/> Ingineria Sistemelor</label>
+            <label><input type="radio" name="profil" value="cti" class="inline"/> Calculatoare si Tehnologia Informatiei</label>
+            <label><input type="radio" name="profil" value="info" class="inline"/> Informatica</label>
+  
+            <label>
+              <input type="checkbox" name="terms" value="regulament" class="inline"/> Sunt de acord cu <a href="https://outlook.office.com/mail/">regulamentul impus.</a>
+            </label>
+
+            <label>
+              <input type="checkbox" name="terms" value="categorie" class="inline"/> Sustin faptul ca ma incadrez in una dintre <a href="https://outlook.office.com/mail/">categoriile mentionate.</a>
+            </label>
+
+          </fieldset>
+  
+          <fieldset>
+
+            <label>Categoria mea:
+              <select id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">caz social</option>
+                <option value="2">student integralist</option>
+                <option value="3">student implicat in activitati extracuriculare</option>
+              </select>
+            </label>
+
+            <label>Destinatia aleasa:
+                <select id="dropdown">
+                  <option value="">(select one)</option>
+                  <option value="1">Corfu, Grecia (19.07 - 24.07)</option>
+                  <option value="2">Sunny Beach, Bulgaria (25.07 - 30.07)</option>
+                  <option value="3">Mount Rigi, Elvetia (30.07 - 05.08)</option>
+                  <option value="4">Pyrenees, Spania (05.08 - 10.08)</option>
+                </select>
+              </label>
+
+          </fieldset>
+  
+          <fieldset>
+            <label>Ce parere ai avut despre acest an scolar?:
+              <textarea name="bio" rows="3" cols="30" placeholder="De exemplu cum au fost cadrele diactice, colectivul, etc."></textarea>
+          </fieldset
+  
+        </form>
+  
+        <input id="submit" type="submit" value="Submit" />
+    </div>
+</body>
+</html>
